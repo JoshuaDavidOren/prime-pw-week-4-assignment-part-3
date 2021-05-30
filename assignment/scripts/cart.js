@@ -1,9 +1,13 @@
 console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
-const basket = []
+let basket = [];
 function addItem( item ) {
-  basket.push(item)
-  return true
+  basket.push( item );
+  return item;
+
 }
-console.log( 'trying this', addItem());
+addItem( 'food')
+addItem( 'food2')
+addItem( 'food3')
+console.log(basket)
