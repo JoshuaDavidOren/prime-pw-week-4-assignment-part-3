@@ -4,10 +4,15 @@ console.log('***** Cart Functions *****');
 let basket = [];
 function addItem( item ) {
   basket.push( item );
-  return item;
+  return true;
 
 }
 addItem( 'food')
 addItem( 'food2')
 addItem( 'food3')
 console.log(basket)
+
+function listItems(basket) {
+  for( let i = 0; i < basket.length; i++)
+  console.log(basket[i]);
+}
